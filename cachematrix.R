@@ -14,6 +14,12 @@ makeCacheMatrix <- function(x = matrix()) {
   ## Function to get the value of the original matrix 
   get <- function() x
   
+  ## Function to set the value of the matrix
+  set <- function(y) {
+    x <<- y
+    xi <<- NULL
+  }
+  
   ## function to set the cached value of the inverse matrix
   setinverse <- function(inv) xi <<- inv
 
